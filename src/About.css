@@ -1,0 +1,75 @@
+.about-section {
+  background-color: #0D1B2A; /* same as hero section */
+  color: #fff;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #00BFA6; /* accent color */
+  position: relative;
+}
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #00BFA6;
+  margin: 8px auto 0 auto;
+  border-radius: 2px;
+}
+
+.experience-row {
+  margin-top: 50px;
+}
+
+.experience-card {
+  background: #1B263B; /* slightly lighter than section bg */
+  border-radius: 12px;
+  padding: 25px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0,191,166,0.25);
+}
+
+.company-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #00BFA6;
+}
+.role {
+  display: block;
+  font-weight: 600;
+  color: #14FFEC; /* brighter accent */
+  margin-bottom: 5px;
+}
+.duration {
+  display: block;
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+.experience-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #e0f7fa;
+}
+.experience-desc ul {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+.experience-desc li {
+  margin-bottom: 6px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .experience-card {
+    padding: 20px;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+}

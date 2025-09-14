@@ -1,0 +1,37 @@
+/* Background */
+.skills-section {
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+}
+
+/* Card */
+.skill-card {
+  background: #1e1e1e;
+  border-radius: 12px;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.08);
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.18);
+}
+
+/* Progress */
+.progress {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+}
+
+.progress-bar {
+  border-radius: 6px;
+}
+
+/* API custom purple */
+.bg-purple {
+  background-color: #9b59b6 !important;
+}
+
+.text-purple {
+  color: #9b59b6 !important;
+}

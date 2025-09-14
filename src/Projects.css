@@ -1,0 +1,49 @@
+/* Projects.css */
+.projects-section {
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #00BFA6;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.project-card {
+  background: #1e1e1e;
+  border-radius: 12px;
+  border: none;
+  padding: 20px 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.card-text {
+  font-size: 0.95rem;
+}
+
+.badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.btn {
+  font-weight: 600;
+  text-transform: uppercase;
+}

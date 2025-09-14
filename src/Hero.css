@@ -1,0 +1,119 @@
+.hero {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  background: linear-gradient(135deg, #0D1B2A, #1B263B, #415A77);
+  color: #fff;
+  overflow: hidden;
+}
+
+.social-icons {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 10;
+}
+.social-icons a {
+  color: #00BFA6;
+  font-size: 1.5rem;
+  transition: all 0.3s;
+}
+.social-icons a:hover {
+  color: #14FFEC;
+  transform: scale(1.2);
+}
+
+.hero-content {
+  max-width: 700px;
+  padding: 0 20px;
+}
+
+.hero-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #00BFA6;
+  box-shadow: 0 0 30px rgba(0,191,166,0.4);
+  margin-bottom: 20px;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+.hero-img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 50px rgba(20,255,236,0.7);
+}
+
+.hero-name {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+}
+
+.hero-title {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #00BFA6;
+}
+
+.typing-text {
+  border-right: 3px solid #00BFA6;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: typing 3s steps(40, end) infinite alternate, blink 0.7s step-end infinite;
+}
+@keyframes typing { 0% { width: 0 } 100% { width: 100% } }
+@keyframes blink { 50% { border-color: transparent } }
+
+.hero-desc {
+  font-size: 1.1rem;
+  color: #e0f7fa;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.hero-buttons .btn {
+  margin: 0 10px;
+  font-weight: bold;
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.hero-buttons .btn-primary {
+  background-color: #00BFA6;
+  border: none;
+}
+.hero-buttons .btn-primary:hover {
+  background: #14FFEC;
+  color: #000;
+  transform: translateY(-3px);
+}
+.hero-buttons .btn-light:hover {
+  background: rgba(255,255,255,0.9);
+  color: #1B263B;
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-name { font-size: 2.5rem; }
+  .hero-title { font-size: 1.3rem; }
+  .hero-img { width: 130px; height: 130px; }
+  .hero-desc { font-size: 1rem; }
+  .social-icons { left: 15px; top: 15px; }
+}
+@media (max-width: 480px) {
+  .hero-name { font-size: 2rem; }
+  .hero-title { font-size: 1.1rem; }
+  .hero-img { width: 110px; height: 110px; }
+}

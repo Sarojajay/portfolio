@@ -1,0 +1,76 @@
+.custom-navbar {
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364); /* professional dark gradient */
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  z-index: 999;
+}
+
+/* Brand hover */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.navbar-brand:hover {
+  color: #00BFA6;
+  transform: scale(1.1);
+}
+
+/* Nav links */
+.nav-link {
+  position: relative;
+  color: #fff !important;
+  margin: 0 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #00BFA6;
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #00BFA6 !important;
+}
+
+/* Hamburger animation */
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280,191,166,0.9%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  transition: all 0.3s;
+}
+
+/* Navbar collapse (mobile) */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    background: rgba(15, 32, 39, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    transition: all 0.3s ease;
+  }
+
+  .nav-link {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+}
